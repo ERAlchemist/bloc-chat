@@ -6,8 +6,16 @@
 				<input class="button" type="submit" value="New Room" ng-click="home.open()">
 			</form>
 			<div class="chat-rooms" ng-repeat="room in home.rooms">
-				<a>{{ room.name }}</a>
+				<a class="room-link" ng-click="home.setRoom(room)">{{ room.name }}</a>
             </div>
 	</aside>
+    <section class="container">
+        <header class="room-name">{{home.currentRoom.name}}</header>
+        <div>
+            <p class="message-content" ng-repeat="message in home.currentMessages">{{message.username}}: {{ message.content }} <br> (Sent: {{ message.sentAt | date : "medium" : 'PST' }}) </p>
+        </div>
+        
+
+    </section>
 		
 	

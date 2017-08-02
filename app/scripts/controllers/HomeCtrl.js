@@ -5,7 +5,7 @@
         
         ctrl.rooms = Room.all;
 		
-		ctrl.currentRoom = {};
+		ctrl.currentRoom = null;
 	
         
         ctrl.open = function() {
@@ -13,13 +13,16 @@
                 animation: ctrl.animationsEnabled,
                 templateUrl: '/templates/modal.html',
                 controller: 'ModalInstanceCtrl as modalInstance',
-				resolve: {
-                    rooms: function() {
-                        return ctrl.rooms;
-                    }
-                }
+				
             });
         };
+        
+        ctrl.setRoom = function(room){
+            ctrl.currentRoom = room;
+            ctrl.currentMessages = Message.getByRoomID(ctrl.currentRoom.$id);
+            
+        };
+        
 
 
         
