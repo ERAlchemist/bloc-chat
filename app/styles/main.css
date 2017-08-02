@@ -1,9 +1,103 @@
-.navigation {
-    height: 100%;
-    width: 20%;
-    background-color: darkgray;
-    padding: 1.5rem;
-    position: fixed;
-    top: 0;
-    left: 0;
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	font-family: "Open Sans";
+}
+
+.container {
+	display: inline-block;
+}
+
+.sidebar {
+	background-color: rgb(231, 231, 231);
+	color: black;
+	width: 20%;
+	height: 100vh;
+	text-align: center;
+    display: inline-block;
+}
+.sidebar-title{
+    text-align: center;
+    font-size: 60px;
+}
+
+.sidebar-header {
+	
+    text-align: center;
+    font-size: 35px;
+    
+}
+
+.new-room-btn {
+	padding: 0 0 15px 10px;
+    margin: auto;
+}
+
+
+
+
+.main-header {
+	background-color: white;
+	color: rgb(189, 195, 199);
+	padding: 20px 0 20px 10px;
+	font-size: 40px;
+}
+
+.chat-rooms {
+    font-size: 25px;
+	
+    
+}
+	
+
+
+
+
+
+
+.modal-box{
+    background-color: rgb(231, 231, 231);;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    margin-left: 12%;
+    margin-top: 1%;
+    text-align: center;
+    border: 3px solid blue;
+    padding: 20px 20px 20px 20px;
+}
+
+.room-box-text {
+	display: block;
+    text-align: center;
+    margin-left: 35px;
+    
+}
+
+/* Button */
+
+.button {
+	transition: background-color 0.2s ease;
+	background-color: rgb(52, 152, 219);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: table-row;
+    font-size: 16px;
+    
+    margin-top: 20px;
+}
+
+.button:hover {
+	cursor: pointer;
+	background-color: rgb(41, 128, 185);
 }
