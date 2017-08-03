@@ -1,14 +1,19 @@
 
 	<aside class="sidebar" >
-        <h1 class="sidebar-title">Bloc Chat</h1>
+        <h1 class="sidebar-title"  ng-click="home.homeTest()">Bloc Chat</h1>
         <h3 class="sidebar-header">Chat Rooms:</h3>
 			
 			<div class="chat-rooms" ng-repeat="room in home.rooms">
-                <a>-{{ room.name }}<br><br></a>
+                <h2 ng-click="home.homeTest()">-{{ room.name }}</h2><br><br>
             </div>
             <form class="new-room-btn">
 				<input class="button" type="submit" value="New Room" ng-click="home.open()">
 			</form>
 	</aside>
+<section class="container">
+
+
+
+</section>
 		
 	
