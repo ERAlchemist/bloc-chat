@@ -22,22 +22,27 @@ body {
 	height: 100vh;
 	text-align: center;
     display: inline-block;
+    border: 3px solid blue;
 }
 .sidebar-title{
     text-align: center;
     font-size: 60px;
+    margin-top: 60px;
+    font-family:monospace;
 }
 
 .sidebar-header {
 	
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
+    margin-top: 35px;
+    font-family: monospace;
     
 }
 
 .new-room-btn {
 	padding: 0 0 15px 10px;
-    margin: auto;
+    margin-top: 20px;
 }
 
 
@@ -52,8 +57,11 @@ body {
 
 .chat-rooms {
     font-size: 25px;
-	
-    
+	word-spacing:inherit;
+    text-align: left;
+    margin-left: 110px;
+    font-family: monospace;
+    font-weight: bold;
 }
 	
 
