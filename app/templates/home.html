@@ -4,7 +4,7 @@
         <h3 class="sidebar-header">Chat Rooms:</h3>
 			
 			<div class="chat-rooms" ng-repeat="room in home.rooms">
-                <h2 ng-click="home.homeTest()">-{{ room.name }}</h2><br><br>
+                <h2 ng-click="home.setRoom(room.$id)">-{{ room.name }}</h2><br><br>
             </div>
             <form class="new-room-btn">
 				<input class="button" type="submit" value="New Room" ng-click="home.open()">

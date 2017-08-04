@@ -21,11 +21,14 @@
                 }
             });
         };
-        var setRoom = function(room){
+        
+       ctrl.setRoom = function(room){
             alert(room);
+            console.log(ctrl.currentRoom);
             ctrl.currentRoom = room;
-            this.messages = Message.getByRoomId(room)
-        };
+            ctrl.messages = Message.getByRoomId(room)
+       };
+        
         function homeTest (){
             alert('test');
         }
