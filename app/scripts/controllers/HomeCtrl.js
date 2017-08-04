@@ -23,8 +23,8 @@
         };
         
        ctrl.setRoom = function(room){
-            alert(room);
-            console.log(ctrl.currentRoom);
+            
+            
             ctrl.currentRoom = room;
             ctrl.messages = Message.getByRoomId(room)
        };

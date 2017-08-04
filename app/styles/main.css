@@ -109,3 +109,32 @@ body {
 	cursor: pointer;
 	background-color: rgb(41, 128, 185);
 }
+.container {
+   border: 0px;
+    margin: 0px;
+    padding: 0px;
+    background-color: azure;
+    
+    
+}
+.table{
+    border: 3px solid gray;
+    align-items: flex-end;
+    margin: 0px auto;
+    position:relative;
+}
+.username{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.sentAt{
+    text-align: right;
+}
+.room-ms{
+    font-size: 30px;
+}
+.content{
+    text-indent: 5px;
+    font-weight: 100;
+}
