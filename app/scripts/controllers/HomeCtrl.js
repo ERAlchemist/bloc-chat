@@ -23,10 +23,8 @@
         };
         
        ctrl.setRoom = function(room){
-            
-            
-            ctrl.currentRoom = room;
-            ctrl.messages = Message.getByRoomId(room)
+        ctrl.currentRoom = room;
+        ctrl.messages = Message.getByRoomId(room.$id);
        };
         
         function homeTest (){
