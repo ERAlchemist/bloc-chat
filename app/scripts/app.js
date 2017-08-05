@@ -16,10 +16,15 @@
                 url: '/',
                 controller: 'ModalInstanceCtrl as modal',
                 templateURL: 'templates/modal.html'
+			 })
+            .state('UserModalInstance', {
+				url: '/',
+				controller: 'UserModalInstanceCtrl as userModalInstance',
+				templateUrl: '/templates/userModal.html'
 			 });
     };
 
     angular
-        .module('blocChat', ['ui.router', 'firebase', 'ui.bootstrap' ])
+        .module('blocChat', ['ui.router', 'firebase', 'ui.bootstrap', 'ngCookies' ])
         .config(config);
 })();    

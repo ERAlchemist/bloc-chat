@@ -11,13 +11,12 @@ body {
 	font-family: "Open Sans";
 }
 
-.container {
-	
-}
+
 
 .sidebar {
-	background-color: rgb(231, 231, 231);
-	color: black;
+	background-color: #0E77CC;
+    background: linear-gradient(49deg, rgb(45,1190,268) 0%, rgb(118,165,288) 79%);
+	color: #332211;
 	width: 20%;
 	height: 100vh;
 	text-align: center;
@@ -59,7 +58,7 @@ body {
     font-size: 25px;
 	word-spacing:inherit;
     text-align: left;
-    margin-left: 110px;
+    margin-left: 77px;
     font-family: monospace;
     font-weight: bold;
 }
@@ -85,7 +84,7 @@ body {
 .room-box-text {
 	display: block;
     text-align: center;
-    margin-left: 35px;
+    margin-left: 25px;
     
 }
 
@@ -110,7 +109,7 @@ body {
 	background-color: rgb(41, 128, 185);
 }
 .container {
-   border: 0px;
+   border: 3px solid blue;
     margin: 0px;
     padding: 0px;
     background-color: azure;
