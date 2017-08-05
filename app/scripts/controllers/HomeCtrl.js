@@ -1,16 +1,16 @@
 (function() {
-    function HomeCtrl($uibModal, Room, Message) {          
+    function HomeCtrl($uibModal, Room, Message, $cookies) {          
         var messages = [];
         var ctrl = this;
         ctrl.heroTitle = "Bloc Chat";
-        
+        ctrl.user = $cookies.get('blocChatCurrentUser');
         ctrl.rooms = Room.all;
 		
 		ctrl.currentRoom = {};
 	   
         
         ctrl.open = function() {
-            var modalInstance = $uibModal.open({
+            $uibModal.open({
                 animation: ctrl.animationsEnabled,
                 templateUrl: '/templates/modal.html',
                 controller: 'ModalInstanceCtrl as modalInstance',
@@ -37,5 +37,5 @@
     
     angular
         .module('blocChat')
-        .controller('HomeCtrl', ['$uibModal', 'Room', 'Message', HomeCtrl]);
+        .controller('HomeCtrl', ['$uibModal', 'Room', 'Message', '$cookies', HomeCtrl]);
 })();
