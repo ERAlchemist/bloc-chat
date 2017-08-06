@@ -3,7 +3,7 @@
 		var ctrl = this;
 
 		ctrl.title = "Enter a username";
-		ctrl.user = "test"
+		ctrl.user = "test";
     
 		ctrl.ok = function () {
 			$cookies.put('blocChatCurrentUser', ctrl.username);

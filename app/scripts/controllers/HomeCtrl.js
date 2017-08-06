@@ -27,9 +27,11 @@
         ctrl.messages = Message.getByRoomId(room.$id);
        };
         
-        function homeTest (){
-            alert('test');
-        }
+        ctrl.sendMessage = function(message) {
+			message.username = ctrl.user;
+			message.roomId = ctrl.currentRoom.$id;
+			Message.send(message);
+		};
 
 
         

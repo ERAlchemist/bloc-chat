@@ -23,10 +23,13 @@
                     <br/>
                     <p class="content">{{ message.content }}</p>
                 </td>
-                <td class="sentAt">{{ message.sentAt }}</td>
+                <td class="sentAt">{{ message.sentAt | date: "EEE MMM dd yyyy h:mm:ss PST"  }}</td>
             </tr>
-            
-        </table> 
+        </table>
+        <form class="new-message">
+			<input type="text" class="new-message-input" placeholder="your message here" ng-model="newMessage.content">
+			<input class="button" type="submit" value="Send" ng-click="home.sendMessage(newMessage)">
+		</form>
     
     
     
