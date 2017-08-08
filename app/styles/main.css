@@ -14,7 +14,7 @@ body {
 
 
 .sidebar {
-	background-color: #0E77CC;
+	background-color: #0E77ee;
     background: linear-gradient(49deg, rgb(45,1190,268) 0%, rgb(118,165,288) 79%);
 	color: #332211;
 	width: 20%;
@@ -115,6 +115,8 @@ body {
     background-color: azure;
     display: inline-block;
     vertical-align: top;
+    width: 700px;
+    position: absolute;
     
 }
 .table{
@@ -122,6 +124,8 @@ body {
     align-items: flex-end;
     margin: 0px auto;
     position:relative;
+    background-color: azure;
+    
 }
 .username{
     font-size: 20px;
@@ -138,7 +142,7 @@ body {
     text-indent: 5px;
     font-weight: 100;
 }
-.new-message > * {
+.new-message {
 	padding: 10px;
 	background-color: rgb(236, 240, 241);
 	line-height: 30px;
@@ -147,6 +151,6 @@ body {
 	outline: 0;
 	border-right: 1px solid rgba(0,0,0,0.2);
 	flex: 1%;	
-	-webkit-appearance:none;
+	
 	
 }

@@ -12,9 +12,6 @@
             </div>
 	</aside>
 <section class="container">
-
-
-
     <h2 class="room-ms" >{{ home.currentRoom.name}}</h2>
         <table class="table">
             <tr ng-repeat="message in home.messages" >
@@ -29,12 +26,7 @@
         <form class="new-message">
 			<input type="text" class="new-message-input" placeholder="your message here" ng-model="newMessage.content">
 			<input class="button" type="submit" value="Send" ng-click="home.sendMessage(newMessage)">
-		</form>
-    
-    
-    
-    
-    
+        </form>
 </section>
 		
 </body>	

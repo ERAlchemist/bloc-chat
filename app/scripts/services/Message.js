@@ -1,5 +1,5 @@
 (function() {
-  function Message($firebaseArray, $filter) {
+  function Message($firebaseArray) {
     var Message = {};
     var ref = firebase.database().ref().child("messages");
     var messages = $firebaseArray(ref);
@@ -12,7 +12,7 @@
         
         messages.$add({ content: newMessage.content,
 						roomId: newMessage.roomId,
-					   	sentAt: date.now(),
+					   	sentAt: Date.now(),
 						username: newMessage.username
 		});
         
@@ -25,5 +25,5 @@
 
   angular
     .module('blocChat')
-    .factory('Message', ['$firebaseArray', '$filter', Message]);
+    .factory('Message', ['$firebaseArray', Message]);
 })();
